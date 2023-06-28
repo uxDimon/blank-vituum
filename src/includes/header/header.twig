@@ -1,0 +1,13 @@
+<header class="header">
+	<a class="header__logo" href="/">
+		<img src="/assets/img/favicon_dark.svg" width="50" head="50" alt="logo">
+	</a>
+
+	<ul class="header__nav">
+		{% for item in header.nav %}
+			<li class="header__nav__item">
+				<a href="{{item.href}}" class="header__mav__link">{{item.text}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</header>

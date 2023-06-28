@@ -1,0 +1,7 @@
+{
+	"template": "layouts/main.twig",
+	"global": {
+		"title": "Глобальный данные которые доступны в любом файле .twig берутся из ./src/global.json",
+		"benefits": ["Fast", "Flexible", "Secure"]
+	}
+}

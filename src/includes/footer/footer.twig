@@ -1,0 +1,15 @@
+<footer class="footer">
+	<ul class="footer__nav">
+		{% for item in footer.nav %}
+			<li class="footer__nav__item">
+				<a href="{{item.href}}" class="footer__mav__link">{{item.text}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<p class="footer__copy">{{footer.copy}}</p>
+
+	<a class="footer__logo" href="/">
+		<img src="/assets/img/favicon_dark.svg" width="50" head="50" alt="logo">
+	</a>
+</footer>

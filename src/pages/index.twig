@@ -1,0 +1,26 @@
+{% extends "layouts/main.twig" %}
+
+{% block title %}
+	Главная страница title
+{% endblock %}
+
+{% block description %}
+	Главная страница description
+{% endblock %}
+
+{% block page %}
+	<h1>{{global.title}}</h1>
+
+	<ul>
+		{% for value in global.benefits %}
+			<li>{{ value }}</li>
+		{% endfor %}
+	</ul>
+
+	{% include "includes/test/test.twig" with {'data': index.testDataFirst} %}
+
+	{% include "includes/test/test.twig" with {'data': index.testDataSecond} %}
+
+	<div id="app"></div>
+
+{% endblock %}

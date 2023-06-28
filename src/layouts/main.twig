@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="description" content="{% block description %}{% endblock %}"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/assets/img/favicon_light.svg" media="(prefers-color-scheme:light)">
+		<link rel="icon" href="/assets/img/favicon_dark.svg" media="(prefers-color-scheme:dark)">
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+	</head>
+	<body>
+		{% include "../includes/header/header.twig" %}
+
+		{% block page %}{% endblock %}
+
+		{% include "../includes/footer/footer.twig" %}
+
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

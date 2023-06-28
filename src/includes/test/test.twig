@@ -1,0 +1,14 @@
+<section class="test">
+	<h2>{{data.title}}</h2>
+	<p>{{data.text}}</p>
+
+	<div class="img-list">
+		<img src="{{data.img.src}}" width="300" height="300" alt="{{data.img.alt}}">
+
+		<img src="/src/includes/test/static/test.svg" width="300" height="300" alt="test.twig">
+
+		<svg width="300" height="300">
+			<use xlink:href="/assets/img/sprite.svg#test-d"/>
+		</svg>
+	</div>
+</section>
