@@ -1,7 +1,7 @@
-@import "./styles/utils.css";
-@import "./styles/normalize.css";
-@import "./styles/fonts.css";
-@import "./styles/layout.css";
+@import "./style/utils.css";
+@import "./style/normalize.css";
+@import "./style/fonts.css";
+@import "./style/layout.css";
 
 @import "./includes/header/header.css";
 @import "./includes/footer/footer.css";

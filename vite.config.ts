@@ -6,6 +6,9 @@ import postcss from "@vituum/vite-plugin-postcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	preview: {
+		port: 2217,
+	},
 	plugins: [
 		svelte(),
 		vituum(),
