@@ -1,4 +1,4 @@
-import "./app.css";
+import "./main.css";
 
 // js
 import "./includes/test/test";
@@ -6,8 +6,11 @@ import "./includes/test/test";
 // svelte
 import App from "./App.svelte";
 
-const app = new App({
-	target: document.getElementById("app"),
-});
+const appEl = document.getElementById("app");
+if (appEl) {
+	new App({
+		target: appEl,
+	});
+}
 
-export default app;
+// export { app };

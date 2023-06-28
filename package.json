@@ -12,9 +12,14 @@
 	"engines": {
 		"node": "18.16.0"
 	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%"
+	],
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^2.0.4",
 		"@tsconfig/svelte": "^4.0.1",
+		"@vituum/vite-plugin-postcss": "^1.0.0",
 		"@vituum/vite-plugin-twig": "^1.0.0",
 		"svelte": "^3.58.0",
 		"svelte-check": "^3.3.1",

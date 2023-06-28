@@ -1,0 +1,12 @@
+:root {
+	/* sizes */
+	--block-max-width: 1200px;
+
+	/* fonts */
+	--main-font: "Inter", sans-serif;
+
+	/*  colors */
+	--color-main: hsl(198, 100%, 44%);
+	--color-text: hsl(0, 0%, 100%);
+	--color-background: hsl(0, 0%, 20%);
+}

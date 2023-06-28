@@ -6,7 +6,7 @@
 			"title": "title из global-date.json testDataFirst",
 			"text": "text из global-date.json testDataFirst",
 			"img": {
-				"src": "/src/includes/test/static/test.svg",
+				"src": "/src/includes/test/img/test.svg",
 				"alt": "Альтернативный текст testDataFirst"
 			}
 		},
@@ -14,7 +14,7 @@
 			"title": "title из global-date.json testDataSecond",
 			"text": "text из global-date.json testDataSecond",
 			"img": {
-				"src": "/src/includes/test/static/test.webp",
+				"src": "/src/includes/test/img/test.webp",
 				"alt": "Альтернативный текст testDataSecond"
 			}
 		},

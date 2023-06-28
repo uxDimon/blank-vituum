@@ -1,0 +1,11 @@
+.test {
+	padding: 20px;
+	margin: 10px;
+	border: 2px solid var(--color-text);
+
+	.img-list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}

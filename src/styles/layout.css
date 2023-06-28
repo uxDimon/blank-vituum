@@ -1,0 +1,33 @@
+/* Main Site Layout */
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select,
+button {
+	font-family: var(--main-font);
+}
+
+body {
+	font-family: var(--main-font);
+	background: var(--color-background);
+	color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+a {
+	color: var(--color-main);
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}

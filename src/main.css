@@ -1,0 +1,9 @@
+@import "./styles/utils.css";
+@import "./styles/normalize.css";
+@import "./styles/fonts.css";
+@import "./styles/layout.css";
+
+@import "./includes/header/header.css";
+@import "./includes/footer/footer.css";
+
+@import "./includes/test/test.css";
