@@ -26,6 +26,7 @@
 		"tslib": "^2.5.0",
 		"typescript": "^5.0.2",
 		"vite": "^4.3.9",
+		"vite-plugin-svg-icons": "^2.0.1",
 		"vituum": "^1.0.0"
 	}
 }

@@ -6,7 +6,7 @@
 			"title": "title из global-date.json testDataFirst",
 			"text": "text из global-date.json testDataFirst",
 			"img": {
-				"src": "/src/includes/test/img/test.svg",
+				"src": "/src/includes/test/img/test.png",
 				"alt": "Альтернативный текст testDataFirst"
 			}
 		},

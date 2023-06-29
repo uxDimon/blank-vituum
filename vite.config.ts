@@ -3,6 +3,8 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 import vituum from "vituum";
 import twig from "@vituum/vite-plugin-twig";
 import postcss from "@vituum/vite-plugin-postcss";
+import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,5 +20,9 @@ export default defineConfig({
 			ignoredPaths: ["./src/pages/**/*.json"],
 		}),
 		postcss(),
+		createSvgIconsPlugin({
+			iconDirs: [path.resolve(process.cwd(), "src/icons")],
+			symbolId: "icon-[dir]-[name]",
+		}),
 	],
 });

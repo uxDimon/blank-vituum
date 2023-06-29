@@ -1,4 +1,5 @@
 import "./main.css";
+import "virtual:svg-icons-register";
 
 // js
 import "./includes/test/test";
@@ -12,5 +13,3 @@ if (appEl) {
 		target: appEl,
 	});
 }
-
-// export { app };
