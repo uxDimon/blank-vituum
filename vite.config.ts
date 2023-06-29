@@ -8,6 +8,14 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	resolve: {
+		alias: {
+			"@src": path.join(__dirname, "src"),
+		},
+	},
+	build: {
+		manifest: true,
+	},
 	preview: {
 		port: 2217,
 	},
@@ -17,11 +25,11 @@ export default defineConfig({
 		twig({
 			root: "./src",
 			data: ["./src/data/**/*.json", "./src/includes/**/*.json", "./src/layouts/**/*.json"],
-			ignoredPaths: ["./src/pages/**/*.json"],
+			// ignoredPaths: ["./src/pages/**/*.json"],
 		}),
 		postcss(),
 		createSvgIconsPlugin({
-			iconDirs: [path.resolve(process.cwd(), "src/icons")],
+			iconDirs: [path.resolve(process.cwd(), "src/icons-sprite")],
 			symbolId: "icon-[dir]-[name]",
 		}),
 	],

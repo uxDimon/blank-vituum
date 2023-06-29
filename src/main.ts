@@ -1,11 +1,10 @@
-import "./main.css";
 import "virtual:svg-icons-register";
 
 // js
-import "./includes/test/test";
+import "@src/includes/test/test";
 
 // svelte
-import App from "./App.svelte";
+import App from "@src/modules/app/App.svelte";
 
 const appEl = document.getElementById("app");
 if (appEl) {

@@ -14,8 +14,8 @@ Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also pow
 
 **Why use this over SvelteKit?**
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+-   It brings its own routing solution which might not be preferable for some users.
+-   It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
 
 This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
@@ -42,6 +42,69 @@ If you have state that's important to retain within a component, consider creati
 ```ts
 // store.ts
 // An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+import { writable } from "svelte/store";
+export default writable(0);
+```
+
+# Использование
+
+Node.js v18.16.0
+[Ссылка на nvm windows (переключать версии node)](https://docs.microsoft.com/ru-ru/windows/dev-environment/javascript/nodejs-on-windows)
+
+Устанавливаем
+
+```
+npm install
+```
+
+Разработка
+
+```
+npm run start
+```
+
+Сборка для навешивания на бек
+
+```
+npm run dev-build
+```
+
+Сборка для продакшена
+
+```
+npm run build
+```
+
+[Документация wiki](https://gitlab-ci.raketa.agency/skeleton/blank_gulp_new/-/wikis/home)
+
+## Файловая структура проекта
+
+```
+├── dist/                                   # Папка с готовой сборкой проекта
+├── src/                                    # Основная папка с фронтом проекта
+│   ├── fonts/                              # Шрифты
+│   ├── img/                                # Общие изображения для страниц (.png .jpg .svg .webp)
+│   │   └── sprite/                         # .svg спрайты
+│   ├── includes/                           # Содержатся все компоненты
+│   │   ├── test/                           # Папка с файлами компонента
+│   │   │   ├── static/                     # Папка с картинками компонента (.png .jpg .svg .webp) (может называться как угодно)
+│   │   │   ├── data.json                   # Файл с данными компонента
+│   │   │   ├── test.js                     # js компонента
+│   │   │   ├── test.pug                    # html компонента
+│   │   │   └── test.scss                   # Стили компонента
+│   │   └── layout.pug                      # Общая для всех страниц разметка
+│   ├── js/                                 # Общий js
+│   │   ├── common/                         # js компоненты для подключения
+│   │   └── main.js                         # Точка входа js Все подключается сюда
+│   ├── scss/                               # Стили
+│   │   ├── main.scss                       # Точка входа scss Все подключается сюда
+│   │   ├── fonts.scss                      # Подключение шрифтов
+│   │   ├── layout.scss                     # Общие стили
+│   │   ├── normalize.scss                  # Нормалайз
+│   │   └── utils.scss                      # scss переменные
+│   ├── pages/                              # Шаблоны страниц
+│   ├── fische/                             # Папка для рыбы (любые файлы) dist/assets/fische !! но только при `npm run start` в любых других сборках папки не будет !!
+│   ├── public/                             # Все содержимое этой папки перенесется в корень папки dist/
+│   └── static/                             # Все содержимое этой папки перенесется в dist/assets/static
+
 ```
