@@ -1,15 +1,20 @@
+<!-- Шаблон для страницы -->
 {% extends "layouts/main.twig" %}
 
+<!-- Устанавливает title страницы -->
 {% block title %}
 	Главная страница title
 {% endblock %}
 
+<!-- Устанавливает description страницы -->
 {% block description %}
 	Главная страница description
 {% endblock %}
 
 {% block page %}
+	<!-- Данные берутся из src/data/global.json -->
 	<h1>{{global.title}}</h1>
+	<p>{{global.text}}</p>
 
 	<ul>
 		{% for value in global.benefits %}
@@ -17,10 +22,13 @@
 		{% endfor %}
 	</ul>
 
+	<!-- Добавляем компонент test.twig -->
+	<!-- Присваиваем к data данные из index.testDataFirst которые находятся в файле src/data/pages/index.json -->
 	{% include "includes/test/test.twig" with {'data': index.testDataFirst} %}
 
+	<!-- Таким образом в один и тот же компонент можно использовать с разными данными -->
 	{% include "includes/test/test.twig" with {'data': index.testDataSecond} %}
 
+	<!-- Инициализируем Svelte компонент -->
 	<div id="app"></div>
-
 {% endblock %}

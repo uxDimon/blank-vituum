@@ -25,7 +25,6 @@ export default defineConfig({
 		twig({
 			root: "./src",
 			data: ["./src/data/**/*.json", "./src/includes/**/*.json", "./src/layouts/**/*.json"],
-			// ignoredPaths: ["./src/pages/**/*.json"],
 		}),
 		postcss(),
 		createSvgIconsPlugin({

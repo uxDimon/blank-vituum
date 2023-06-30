@@ -1,7 +1,8 @@
 {
 	"template": "layouts/main.twig",
 	"global": {
-		"title": "Глобальный данные которые доступны в любом файле .twig берутся из ./src/global.json",
+		"title": "Глобальный данные которые доступны в любом файле .twig берутся из /src/data/global.json",
+		"text": "На самом деле все данные глобальны) и получить можно доступ к любым например {{ footer.copy }} будет работать везде",
 		"benefits": ["Fast", "Flexible", "Secure"]
 	}
 }

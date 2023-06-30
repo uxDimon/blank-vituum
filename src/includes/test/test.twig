@@ -1,14 +1,23 @@
 <section class="test">
-	<h2>{{data.title}}</h2>
-	<p>{{data.text}}</p>
+	<!-- data универсальный ключ который можно использовать во всех компонентах -->
+	<!-- При импорте компонента на страницу или в другой компонент можно в ключ data передать нужные данные -->
+	<!-- В папке src/pages/ есть пример --><h2>{{data.title}}
+	</h2><p>{{data.text}}
+	</p>
 
-	<div class="img-list">
-		<img src="{{data.img.src}}" width="300" height="300" alt="{{data.img.alt}}">
+		<div
+		class="img-list"> <!-- В данных можно передавать url, текст, всё что угодно -->
+		<img
+		src="{{data.img.src}}" width="300" height="300" alt="{{data.img.alt}}">
 
-		<img src="/src/includes/test/img/test.svg" width="300" height="300" alt="test.twig">
+		<!-- Или можно задавать путь на прямую -->
+		<img
+		src="/src/includes/test/img/test.svg" width="300" height="300" alt="test.twig">
 
+		<!-- Или полностью добавить файл в html -->
 		{% include "./img/test.svg" %}
 
+		<!-- Тут картинка берется из svg спрайта -->
 		<svg width="300" height="300">
 			<use xlink:href="#icon-test-d"/>
 		</svg>

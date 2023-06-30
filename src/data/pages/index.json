@@ -1,36 +1,20 @@
 {
 	"index": {
-		"title": "Глобальный данные которые доступны в любом файле .twig берутся из ./src/global.json",
-		"benefits": ["Fast", "Flexible", "Secure"],
 		"testDataFirst": {
-			"title": "title из global-date.json testDataFirst",
-			"text": "text из global-date.json testDataFirst",
+			"title": "Данные из /src/data/pages/index.json заголовок 1",
+			"text": "Пример как для одного и того же twig компонента можно использовать разные данные",
 			"img": {
 				"src": "/src/includes/test/img/test.png",
-				"alt": "Альтернативный текст testDataFirst"
+				"alt": "Альтернативный текст testDataFirst 1"
 			}
 		},
 		"testDataSecond": {
-			"title": "title из global-date.json testDataSecond",
-			"text": "text из global-date.json testDataSecond",
+			"title": "Данные из /src/data/pages/index.json заголовок 2",
+			"text": "Компонент тот же а данные другие))",
 			"img": {
 				"src": "/src/includes/test/img/test.webp",
-				"alt": "Альтернативный текст testDataSecond"
+				"alt": "Альтернативный текст testDataSecond 2"
 			}
-		},
-		"tabs": [
-			{
-				"control": "Таб-1",
-				"container": "Текст таб 1"
-			},
-			{
-				"control": "Таб-2",
-				"container": "Текст таб 2"
-			},
-			{
-				"control": "Таб-3",
-				"container": "Текст таб 3"
-			}
-		]
+		}
 	}
 }

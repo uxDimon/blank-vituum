@@ -47,6 +47,6 @@
 		filter: drop-shadow(0 0 2em hsla(15, 100%, 50%, 0.667));
 	}
 	.read-the-docs {
-		color: #888;
+		color: hsl(0, 0%, 53%);
 	}
 </style>
